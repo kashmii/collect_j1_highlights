@@ -1,0 +1,16 @@
+current directory: /Users/myac21/ruby_app/collect_j1_highlights/vendor/bundle/ruby/3.1.0/gems/stringio-3.1.0/ext/stringio
+/Users/myac21/.rbenv/versions/3.1.1/bin/ruby -I /Users/myac21/.rbenv/versions/3.1.1/lib/ruby/3.1.0 -r ./siteconf20240228-57839-ww394m.rb extconf.rb
+creating Makefile
+
+current directory: /Users/myac21/ruby_app/collect_j1_highlights/vendor/bundle/ruby/3.1.0/gems/stringio-3.1.0/ext/stringio
+make DESTDIR\= clean
+
+current directory: /Users/myac21/ruby_app/collect_j1_highlights/vendor/bundle/ruby/3.1.0/gems/stringio-3.1.0/ext/stringio
+make DESTDIR\=
+compiling stringio.c
+linking shared-object stringio.bundle
+ld: warning: -multiply_defined is obsolete
+
+current directory: /Users/myac21/ruby_app/collect_j1_highlights/vendor/bundle/ruby/3.1.0/gems/stringio-3.1.0/ext/stringio
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 stringio.bundle ./.gem.20240228-57839-cbbxzi
