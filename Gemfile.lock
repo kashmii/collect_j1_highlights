@@ -1,6 +1,8 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    base64 (0.2.0)
+    bigdecimal (3.1.6)
     date (3.3.4)
     nokogiri (1.16.2-arm64-darwin)
       racc (~> 1.4)
@@ -9,10 +11,21 @@ GEM
       time
       uri
     racc (1.7.3)
+    rexml (3.2.6)
+    rubyzip (2.3.2)
+    selenium-webdriver (4.18.1)
+      base64 (~> 0.2)
+      rexml (~> 3.2, >= 3.2.5)
+      rubyzip (>= 1.2.2, < 3.0)
+      websocket (~> 1.0)
+    sequel (5.78.0)
+      bigdecimal
+    sqlite3 (1.7.2-arm64-darwin)
     stringio (3.1.0)
     time (0.3.0)
       date
     uri (0.13.0)
+    websocket (1.2.10)
 
 PLATFORMS
   arm64-darwin-20
@@ -20,6 +33,9 @@ PLATFORMS
 DEPENDENCIES
   nokogiri
   open-uri
+  selenium-webdriver
+  sequel
+  sqlite3
 
 BUNDLED WITH
    2.3.11
