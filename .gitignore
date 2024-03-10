@@ -4,3 +4,7 @@ game.db
 
 /vendor/
 /test_data/
+
+app/static/data.rb
+
+.vscode
