@@ -8,3 +8,4 @@ game.db
 app/static/data.rb
 
 .vscode
+.commands.md
