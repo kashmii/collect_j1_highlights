@@ -28,10 +28,8 @@ end
 def read_local_data
   # ===================================
   # 変数定義など
-  game_week_num = 4
-
   game_attrs = []
-  target_text = "第 #{game_week_num} 日（全 38 日）"
+  target_text = "第 #{GAME_WEEK_NUM} 日（全 38 日）"
   # ===================================
 
   html = File.read(HTML_FILE_PATH)

@@ -9,3 +9,5 @@ gem 'selenium-webdriver'
 gem 'sqlite3'
 
 gem 'sequel'
+
+gem 'rake'
