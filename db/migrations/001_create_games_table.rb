@@ -7,7 +7,7 @@ Sequel.migration do
   change do
     create_table(:games) do
       primary_key :id
-      Date :date
+      DateTime :datetime
       Integer :game_week
       String :home_team
       String :away_team

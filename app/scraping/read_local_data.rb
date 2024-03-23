@@ -72,7 +72,7 @@ def read_local_data
 
     # 出力する配列にpush
     if home && away && date_str && time_str
-      game_attrs << [game_week_num, parse_datetime(date_div&.text, time_div&.text), home.text, away.text]
+      game_attrs << [GAME_WEEK_NUM, parse_datetime(date_div&.text, time_div&.text), home.text, away.text]
     end
   end
 

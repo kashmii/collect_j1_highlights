@@ -5,7 +5,7 @@ require_relative '../app/static/data'
 
 namespace :get_highlight do
   desc "Get highlight url from google"
-  task :main do |task|
+  task :main do |task, args|
     # ===
     # ===
     # Selenium WebDriverの設定
@@ -37,7 +37,7 @@ namespace :get_highlight do
     # this_tbodyの子要素である<tr>要素の中の<td>要素すべてを選択します
     td_arr = this_tbody.css('> tr > td')
 
-    HOMES.each do |team|
+    args.extras.each do |team|
       td_arr.each do |td|
         div_under_td = td.css('div').find { |div| div.text.include?(team) }
 
