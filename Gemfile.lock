@@ -3,6 +3,7 @@ GEM
   specs:
     base64 (0.2.0)
     bigdecimal (3.1.6)
+    chronic (0.10.2)
     date (3.3.4)
     nokogiri (1.16.2-arm64-darwin)
       racc (~> 1.4)
@@ -27,6 +28,8 @@ GEM
       date
     uri (0.13.0)
     websocket (1.2.10)
+    whenever (1.0.0)
+      chronic (>= 0.6.3)
 
 PLATFORMS
   arm64-darwin-20
@@ -38,6 +41,7 @@ DEPENDENCIES
   selenium-webdriver
   sequel
   sqlite3
+  whenever
 
 BUNDLED WITH
    2.3.11

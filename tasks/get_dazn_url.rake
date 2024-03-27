@@ -37,10 +37,14 @@ namespace :get_highlight do
     # this_tbodyの子要素である<tr>要素の中の<td>要素すべてを選択します
     td_arr = this_tbody.css('> tr > td')
 
-    args.extras.each do |team|
+    # この処理は必要:
+    # Encoding::CompatibilityError: incompatible character encodings: UTF-8 and ASCII-8BIT
+    arr = args.extras.map { |str| str.force_encoding('UTF-8') }
+    puts "arr: #{arr}"
+
+    arr.each do |team|
       td_arr.each do |td|
         div_under_td = td.css('div').find { |div| div.text.include?(team) }
-
         next if div_under_td.nil?
 
         dazn_url = div_under_td.at('a').attribute('href').value

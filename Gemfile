@@ -11,3 +11,5 @@ gem 'sqlite3'
 gem 'sequel'
 
 gem 'rake'
+
+gem 'whenever'

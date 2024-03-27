@@ -65,11 +65,6 @@ def read_local_data
     home = fifth_tr&.at('.liveresults-sports-immersive__hide-element')
     away = sixth_tr&.at('.liveresults-sports-immersive__hide-element')
 
-    # if home && away
-    #   puts "home_team: #{home.text}, away_team: #{away.text}"
-    #   puts
-    # end
-
     # 出力する配列にpush
     if home && away && date_str && time_str
       game_attrs << [GAME_WEEK_NUM, parse_datetime(date_div&.text, time_div&.text), home.text, away.text]
