@@ -34,4 +34,6 @@ uniq_datetimes.each do |datetime|
   hometeams = this_time_games.map(:home_team)
   puts "#{datetime}の試合のホームチームは #{hometeams.join(',')} です"
   # wheneverでcronを設定する(引数にhomeチームを渡す)
-end
+# crontab を設定し終えたら、ファイルの更新を実行する
+system('whenever --update-crontab')
+
